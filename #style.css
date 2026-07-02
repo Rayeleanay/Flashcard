@@ -4,5 +4,15 @@
 }
 
 .cabecalho{
-    padding: 16px 25px;
+    padding: 16px 26px;
+    display: flex;
 }
+
+ .cartao{
+    width: 260px;
+    height: 200;
+ }
+
+ .cartao-imagem{
+    width: 100;
+ }
