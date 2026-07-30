@@ -1,76 +1,85 @@
-{
+
+estilos.css
+Página
+1
+/
+1
+100%
+* {
     margin: 0;
     padding: 0;
 }
 
-.cabecalho{
-    padding: 16px 26px;
+.cabecalho {
+    padding: 15px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: bisque;
+    background-color: #7e3e1c;
 }
 
- .cartao{
+.cartao {
     width: 260px;
-    height: 200;
- }
+    height: 200px;
+}
 
- .cartao-frente, .cartao-verso{
-    width: 100;
- }
+.cartao-imagem {
+    width: 100%;
+}
 
- body{
+body {
     display: flex;
     flex-direction: column;
-    min-height: 100vw;
-    background-color: aquamarine;
- }
- 
- main{
-    flex:1;
+    min-height: 100vh;
+    background-color: #f5f2f2;
+}
+
+main {
+    flex: 1;
     display: flex;
     flex-direction: column;
- }
-
-.cabecalho{
-   color: azure;
-   text-decoration: none;
+    align-items: center;
 }
 
-h1{
-   color: #d9a0a0;
-   font-size: 24px;
+.cabecalho-link {
+    color: #fff;
+    text-decoration: none;
 }
 
-footer{
-   background-color: bisque;
-   padding: 15px 25px;
-   color: #d9a0a0;
+h1 {
+    color: #fff;
+    font-size: 24px;
 }
 
-.cartao-interno{
-position: relative;
-transition: transform 0.8s;
-transform-style: preserve-3d;
+footer {
+    background-color: #7e3e1c;
+    padding: 15px 25px;
+    color: #fff;
 }
 
-.cartao:hover .cartao-interno{
-   transform: rotateY(180deg);
+.cartao-interno {
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
-.cartao-frente, .cartao-verso{
-   position: absolute;
-   border-radius: 12px;
-   box-shadow: 0 6px 12px rgba(red, green, blue, alpha); 
-   backface-visibility: hidden;
+.cartao:hover .cartao-interno {
+    transform: rotateY(180deg);
 }
 
-.cartao-verso{
-   transform: rotateY(180deg);
+.cartao-frente, .cartao-verso {
+    position: absolute;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    backface-visibility: hidden;
+}
+
+.cartao-verso {
+    transform: rotateY(180deg);
 }
 
 section {
     display: flex;
     gap: 16px;
 }
+Exibindo estilos.css…10
